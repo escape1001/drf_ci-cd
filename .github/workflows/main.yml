@@ -42,4 +42,5 @@ jobs:
             pip install -r requirements.txt
             cd /home/ubuntu/drf_ci-cd/drf_test
             
+            python3 manage.py collectstatic --noinput
             sudo systemctl restart site.service
